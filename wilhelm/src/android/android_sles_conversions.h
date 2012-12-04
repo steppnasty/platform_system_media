@@ -44,7 +44,7 @@ static inline uint32_t sles_to_android_sampleRate(SLuint32 sampleRateMilliHertz)
     return (uint32_t)(sampleRateMilliHertz / 1000);
 }
 
-static inline int sles_to_android_sampleFormat(SLuint32 pcmFormat) {
+static inline audio_format_t sles_to_android_sampleFormat(SLuint32 pcmFormat) {
     switch (pcmFormat) {
         case SL_PCMSAMPLEFORMAT_FIXED_16:
             return AUDIO_FORMAT_PCM_16_BIT;
@@ -72,9 +72,7 @@ static inline int sles_to_android_channelMaskIn(SLuint32 nbChannels, SLuint32 ch
 
 static inline int sles_to_android_channelMaskOut(SLuint32 nbChannels, SLuint32 channelMask) {
     // FIXME handle channel mask mapping between SL ES and Android
-    return (nbChannels == 1 ?
-            AUDIO_CHANNEL_OUT_MONO :
-            AUDIO_CHANNEL_OUT_STEREO);
+    return audio_channel_out_mask_from_count(nbChannels);
 }
 
 

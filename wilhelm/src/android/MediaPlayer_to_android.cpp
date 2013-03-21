@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+#include <gui/Surface.h>
+
 #include "sles_allinclusive.h"
 #include "utils/RefBase.h"
 #include "android_prompts.h"

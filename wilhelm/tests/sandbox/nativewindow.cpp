@@ -21,7 +21,7 @@
 
 #include <binder/ProcessState.h>
 #include <surfaceflinger/ISurfaceComposer.h>
-#include <surfaceflinger/SurfaceComposerClient.h>
+#include <gui/SurfaceComposerClient.h>
 #include <utils/String8.h>
 
 #include "nativewindow.h"

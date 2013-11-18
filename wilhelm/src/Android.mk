@@ -157,11 +157,11 @@ EXCLUDE_SRC :=                            \
         itf/IVibra.c                      \
         itf/IVisualization.c
 
-LOCAL_C_INCLUDES:=                                                  \
-        system/media/wilhelm/include                                \
-        frameworks/base/media/libstagefright                        \
-        frameworks/base/media/libstagefright/include                \
-        frameworks/base/include/media/stagefright/openmax           \
+LOCAL_C_INCLUDES:=                                        \
+        system/media/wilhelm/include                      \
+        frameworks/av/media/libstagefright                \
+        frameworks/av/media/libstagefright/include        \
+        frameworks/native/include/media/openmax           \
         system/media/audio_effects/include
 
 # __pthread_gettid
@@ -197,11 +197,11 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := sl_entry.c sl_iid.c assert.c
-LOCAL_C_INCLUDES:=                                                  \
-        system/media/wilhelm/include                                \
-        frameworks/base/media/libstagefright                        \
-        frameworks/base/media/libstagefright/include                \
-        frameworks/base/include/media/stagefright/openmax
+LOCAL_C_INCLUDES:=                                                \
+        system/media/wilhelm/include                              \
+        frameworks/av/media/libstagefright                        \
+        frameworks/av/media/libstagefright/include                \
+        frameworks/native/include/media/openmax
 LOCAL_MODULE := libOpenSLES
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE_TAGS := optional
@@ -212,11 +212,11 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := xa_entry.c xa_iid.c assert.c
-LOCAL_C_INCLUDES:=                                                  \
-        system/media/wilhelm/include                                \
-        frameworks/base/media/libstagefright                        \
-        frameworks/base/media/libstagefright/include                \
-        frameworks/base/include/media/stagefright/openmax
+LOCAL_C_INCLUDES:=                                                \
+        system/media/wilhelm/include                              \
+        frameworks/av/media/libstagefright                        \
+        frameworks/av/media/libstagefright/include                \
+        frameworks/native/include/media/openmax
 LOCAL_MODULE := libOpenMAXAL
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE_TAGS := optional

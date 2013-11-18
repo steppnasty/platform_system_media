@@ -65,7 +65,7 @@ enum AndroidObjectState {
 #define MPEG2_TS_BLOCK_SIZE 188
 
 typedef struct AudioPlayback_Parameters_struct {
-    int streamType;
+    audio_stream_type_t streamType;
     int sessionId;
 } AudioPlayback_Parameters;
 

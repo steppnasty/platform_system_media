@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <surfaceflinger/Surface.h>
+#include <gui/Surface.h>
 #include <gui/ISurfaceTexture.h>
 
 

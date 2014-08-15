@@ -20,8 +20,8 @@
 #include "android_GenericMediaPlayer.h"
 
 #include <media/IMediaPlayerService.h>
-#include <surfaceflinger/ISurfaceComposer.h>
-#include <surfaceflinger/SurfaceComposerClient.h>
+#include <gui/ISurfaceComposer.h>
+#include <gui/SurfaceComposerClient.h>
 #include <media/stagefright/foundation/ADebug.h>
 
 // default delay in Us used when reposting an event when the player is not ready to accept

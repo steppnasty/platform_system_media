@@ -20,7 +20,7 @@
 #include "android_GenericPlayer.h"
 
 #include <binder/IServiceManager.h>
-#include <surfaceflinger/Surface.h>
+#include <gui/Surface.h>
 #include <gui/ISurfaceTexture.h>
 
 
